@@ -3,7 +3,7 @@ from textsummarizer.pipeline.stage_02_data_validation import DataValidationTrain
 from textsummarizer.pipeline.stage_03_data_transformation import DataTransformationTrainingPipeline # type: ignore
 from textsummarizer.pipeline.stage_04_model_trainer import ModelTrainerTrainingPipeline # type: ignore
 from textsummarizer.pipeline.stage_05_model_evaluation import ModelEvaluationTrainingPipeline # type: ignore
-from textsummarizer.logging import logger # type: ignore
+from textsummarizer.logging import logger
 
 STAGE_NAME = "Data Ingestion stage"
 try:
@@ -14,8 +14,6 @@ try:
 except Exception as e:
         logger.exception(e)
         raise e
-
-
 
 
 STAGE_NAME = "Data Validation stage"
@@ -52,8 +50,6 @@ try:
 except Exception as e:
         logger.exception(e)
         raise e
-
-
 
 
 STAGE_NAME = "Model Evaluation stage"
